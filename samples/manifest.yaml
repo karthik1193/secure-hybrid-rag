@@ -1,0 +1,38 @@
+# Access tags for the fictional sample documents.
+# clearance_level: 0 public, 1 employee, 2 manager, 3 executive
+documents:
+  - file: finance-q3-earnings-summary.pdf
+    department: finance
+    clearance_level: 0
+  - file: finance-salary-bands-2026.pdf
+    department: finance
+    clearance_level: 2
+  - file: finance-acquisition-memo.pdf
+    department: finance
+    clearance_level: 3
+  - file: hr-leave-policy.pdf
+    department: hr
+    clearance_level: 1
+  - file: hr-performance-review-guide.pdf
+    department: hr
+    clearance_level: 2
+  - file: engineering-incident-runbook.pdf
+    department: engineering
+    clearance_level: 1
+  - file: engineering-credential-rotation.pdf
+    department: engineering
+    clearance_level: 3
+  - file: qa-release-test-plan.pdf
+    department: qa
+    clearance_level: 1
+  # Mixed document: each section has its own level (see headings).
+  # Tag the whole file at its highest level (3) for now; per-section
+  # overrides are the stretch goal.
+  - file: company-handbook-mixed.pdf
+    department: hr
+    clearance_level: 3
+    sections:
+      "Welcome": 0
+      "Working here": 1
+      "Manager appendix": 2
+      "Executive appendix": 3
