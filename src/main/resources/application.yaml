@@ -3,6 +3,8 @@ spring:
     name: secure-hybrid-rag
   jpa:
     open-in-view: false
+    hibernate:
+      ddl-auto: validate
 
 management:
   endpoint:
